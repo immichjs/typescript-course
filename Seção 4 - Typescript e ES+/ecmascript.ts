@@ -163,29 +163,29 @@ const cientista = { primeiroNome: "Will", experiencia: 12 }
 const { primeiroNome, experiencia } = cientista
 console.log(primeiroNome, experiencia)
 
-function esperar3s (callback: (dado: string) => void) {
-  setTimeout(() => {
-    callback('3s depois...')
-  }, 3000)
-}
+// function esperar3s (callback: (dado: string) => void) {
+//   setTimeout(() => {
+//     callback('3s depois...')
+//   }, 3000)
+// }
 
-esperar3s((resultado: string) => console.log(resultado))
+// esperar3s((resultado: string) => console.log(resultado))
 
-function esperar3sPromise () {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('3s depois da promise')
-    }, 3000);
-  })
-}
+// function esperar3sPromise () {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve('3s depois da promise')
+//     }, 3000);
+//   })
+// }
 
-esperar3sPromise().then(dado => console.log(dado))
+// esperar3sPromise().then(dado => console.log(dado))
 
-fetch(' https://swapi.dev/api/people/1')
-  .then(res => res.json())
-  .then(data => data.films)
-  .then(films => fetch(films[0]))
-  .then(res => res.json())
-  .then(film => console.log(film.title))
-  .catch(err => console.log('Catch' + err))
+// fetch(' https://swapi.dev/api/people/1')
+//   .then(res => res.json())
+//   .then(data => data.films)
+//   .then(films => fetch(films[0]))
+//   .then(res => res.json())
+//   .then(film => console.log(film.title))
+//   .catch(err => console.log('Catch' + err))
 
