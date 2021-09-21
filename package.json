@@ -4,7 +4,9 @@
   "description": "",
   "main": "basic.js",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "@types/node": "^16.9.4",
+    "live-server": "^1.2.1",
+    "systemjs": "^0.21.5"
   },
   "devDependencies": {},
   "scripts": {
